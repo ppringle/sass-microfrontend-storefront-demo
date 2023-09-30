@@ -17,6 +17,9 @@ export default () => {
                     history.push(newPathName);
                 }
             },
+            onSignIn: () => {
+                console.log("User signed in");
+            }
         });
 
         history.listen(onParentNavigate);
